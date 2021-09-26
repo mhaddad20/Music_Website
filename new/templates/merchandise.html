@@ -1,0 +1,312 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/music.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" crossorigin="anonymous">
+    <meta name="description" content="{% block metadescription %}{% endblock %}">
+    <title>{% block title %}{% endblock %}</title>
+    
+</head>
+<body>
+    <div class = "container">
+        <div class="container-fluid navbar-fixed-top my-top-navbar-div">
+            {% include 'top-navbar.html' %}
+        </div>
+    </div>
+    {% include 'navbar.html' %}
+{% block content %}
+
+<div class="bg_contact">
+    <img src="{% static 'images/merchlogo.jpg' %}" alt="window" width="460" height="330">
+    <div class="text_merch">
+        <h1 class="font-italic">MERCHANDISE</h1>
+    </div>
+</div>
+<div class="space"></div>
+      
+<div class="container">
+    <div class="row card-deck mb-5">
+        <div class="col-lg-4 mx-auto px-4">
+            <div class="card">
+                <div class="container_voucher">
+                    <img src="{% static 'images/merchblacktop.png' %}" alt="Avatar" width="230" height="460" class="image_promo">
+                    <div class="overlay">
+                      <div class="text-white text-center p-5">Black starmix short-sleeve top</div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="border text-center font-weight-bold">Black starmix short-sleeve top</h4>
+                    <h5 class="btn btn-outline-danger btn-sm text-decoration-none" ><a href="http://127.0.0.1:8000/f41c1d90-3f13-4707-80b3-8b5c9e986e6e/08035aa5-7f9e-4378-920c-b44a925f7985/" >€10.00</a></h5>
+
+                    <a  class="btn btn-outline-danger btn-sm" id="promo1">
+                        <p>Available for:</p>
+                        <p id="timer"></p>
+                    </a>
+            
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mx-auto px-4">
+            <div class="card">
+                <div class="container_voucher">
+                    <img src="{% static 'images/merchwhitetop.png' %}" alt="Avatar" width="230" height="460" class="image_promo">
+                    <div class="overlay">
+                        <div class="text-white text-center p-5">White starmix short-sleeve top</div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="border text-center font-weight-bold">White starmix short-sleeve top</h4>
+                    <h5 class="btn btn-outline-danger btn-sm text-decoration-none" ><a href="http://127.0.0.1:8000/f41c1d90-3f13-4707-80b3-8b5c9e986e6e/0eb1514c-4e65-469d-bab0-cde5f2798fed/" >€10.00</a></h5>
+
+                    <a  class="btn btn-outline-danger btn-sm" id="promo1">
+                        <p>Available for:</p>
+                        <p id="timer2"></p>
+                    </a>
+            
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mx-auto px-4">
+            <div class="card">
+                <div class="container_voucher">
+                    <img src="{% static 'images/merchblacktoplng.png' %}" alt="Avatar" width="50%" height="50%" class="image_promo">
+                    <div class="overlay">
+                        <div class="text-white text-center p-5">Black starmix long-sleeve top</div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="border text-center font-weight-bold">Black starmix long-sleeve top</h4>
+                    <h5 class="btn btn-outline-danger btn-sm text-decoration-none"><a href="http://127.0.0.1:8000/f41c1d90-3f13-4707-80b3-8b5c9e986e6e/d40c6baa-a52f-4a36-9e2b-7d8639bc2271/">€12.00</a></h5>
+
+                    <a  class="btn btn-outline-danger btn-sm" id="promo1">
+                        <p>Available for:</p>
+                        <p id="timer3"></p>
+                    </a>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row card-deck mb-5">
+        <div class="col-lg-4 mx-auto px-4">
+            <div class="card">
+                <div class="container_voucher">
+                    <img src="{% static 'images/merchwhitetoplng.png' %}" alt="Avatar" width="50%" height="50%" class="image_promo">
+                    <div class="overlay">
+                      <div class="text-white text-center p-5">White starmix long-sleeve top</div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="border text-center font-weight-bold">White starmix long-sleeve top</h4>
+                    <h5 class="btn btn-outline-danger btn-sm text-decoration-none"><a href="http://127.0.0.1:8000/f41c1d90-3f13-4707-80b3-8b5c9e986e6e/8367badc-5683-4540-9c18-c747f229191a/">€12.00</a></h5>
+
+                    <a  class="btn btn-outline-danger btn-sm" id="promo1">
+                        <p>Available for:</p>
+                        <p id="timer4"></p>
+                    </a>
+            
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mx-auto px-4">
+            <div class="card">
+                <div class="container_voucher">
+                    <img src="{% static 'images/Blackbottomfemale.png' %}" alt="Avatar" width="50%" height="320" class="image_promo">
+                    <div class="overlay">
+                        <div class="text-white text-center p-5">Black starmix pants (female)</div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="border text-center font-weight-bold">Black starmix pants (female)</h4>
+                    <h5 class="btn btn-outline-danger btn-sm text-decoration-none"><a href="http://127.0.0.1:8000/f41c1d90-3f13-4707-80b3-8b5c9e986e6e/6262a14a-5cb8-4a93-8c88-32000efc612f/">€12.00</a></h5>
+
+                    <a  class="btn btn-outline-danger btn-sm" id="promo1">
+                        <p>Available for:</p>
+                        <p id="timer5"></p>
+                    </a>
+            
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mx-auto px-4">
+            <div class="card">
+                <div class="container_voucher">
+                    <img src="{% static 'images/whitebottomfemale.png' %}" alt="Avatar" width="50%" height="50%" class="image_promo">
+                    <div class="overlay">
+                        <div class="text-white text-center p-5">White starmix pants (female)</div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="border text-center font-weight-bold">White starmix pants (female)</h4>
+                    <h5 class="btn btn-outline-danger btn-sm text-decoration-none"><a href="http://127.0.0.1:8000/f41c1d90-3f13-4707-80b3-8b5c9e986e6e/c84ac073-c020-4cb3-a29a-f0e001058e41/">€12.00</a></h5>
+
+                    <a  class="btn btn-outline-danger btn-sm" id="promo1">
+                        <p>Available for:</p>
+                        <p id="timer6"></p>
+                    </a>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row card-deck mb-5">
+        <div class="col-lg-4 mx-auto px-4">
+            <div class="card">
+                <div class="container_voucher">
+                    <img src="{% static 'images/blackbottommale.png' %}" alt="Avatar" width="50%" height="50%" class="image_promo">
+                    <div class="overlay">
+                      <div class="text-white text-center p-5">Black starmix pants (male)</div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="border text-center font-weight-bold">Black starmix pants (male)</h4>
+                    <h5 class="btn btn-outline-danger btn-sm text-decoration-none"><a href="http://127.0.0.1:8000/f41c1d90-3f13-4707-80b3-8b5c9e986e6e/f4b37d8e-7521-4223-afc3-b669ad3d44e4/">€12.00</a></h5>
+
+                    <a  class="btn btn-outline-danger btn-sm" id="promo1">
+                        <p>Available for:</p>
+                        <p id="timer7"></p>
+                    </a>
+            
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mx-auto px-4">
+            <div class="card">
+                <div class="container_voucher">
+                    <img src="{% static 'images/whitebottommale.png' %}" alt="Avatar" width="50%" height="50%" class="image_promo">
+                    <div class="overlay">
+                        <div class="text-white text-center p-5">White starmix pants (male)</div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="border text-center font-weight-bold">White starmix pants (male)</h4>
+                    <h5 class="btn btn-outline-danger btn-sm text-decoration-none"><a href="http://127.0.0.1:8000/f41c1d90-3f13-4707-80b3-8b5c9e986e6e/ebd0cf69-b050-4e7f-b7b3-5aa984451dde/">€12.00</a></h5>
+
+                    <a  class="btn btn-outline-danger btn-sm" id="promo1">
+                        <p>Available for:</p>
+                        <p id="timer8"></p>
+                    </a>
+            
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mx-auto px-4">
+            <div class="card">
+                <div class="container_voucher">
+                    <img src="{% static 'images/blackfacecap.png' %}" alt="Avatar" width="50%" height="50%" class="image_promo">
+                    <div class="overlay">
+                        <div class="text-white text-center p-5">Black starmix hat</div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="border text-center font-weight-bold">Black starmix hat</h4>
+                    <h5 class="btn btn-outline-danger btn-sm text-decoration-none"><a href="http://127.0.0.1:8000/f41c1d90-3f13-4707-80b3-8b5c9e986e6e/2f4e7dcc-06e3-4b95-a3d6-394171aac092/">€6.00</a></h5>
+
+                    <a  class="btn btn-outline-danger btn-sm" id="promo1">
+                        <p>Available for:</p>
+                        <p id="timer9"></p>
+                    </a>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row card-deck mb-5">
+        <div class="col-lg-4 mx-auto px-4">
+            <div class="card">
+                <div class="container_voucher">
+                    <img src="{% static 'images/whitefacecap.png' %}" alt="Avatar" width="50%" height="50%" class="image_promo">
+                    <div class="overlay">
+                        <div class="text-white text-center p-5">White starmix hat</div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="border text-center font-weight-bold">White starmix hat</h4>
+                    <h5 class="btn btn-outline-danger btn-sm text-decoration-none"><a href="http://127.0.0.1:8000/f41c1d90-3f13-4707-80b3-8b5c9e986e6e/f282992d-684d-46eb-9726-807611194c2c/">€6.00</a></h5>
+
+                    <a  class="btn btn-outline-danger btn-sm" id="promo1">
+                        <p>Available for:</p>
+                        <p id="timer10"></p>
+                    </a>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var countDownDate1 = new Date("May 11, 2021 12:25:25").getTime();
+    var countDownDate2 = new Date("May 11, 2021 12:25:25").getTime();
+    var countDownDate3 = new Date("May 11, 2021 12:25:25").getTime();
+    var countDownDate4 = new Date("Jun 11, 2021 12:25:25").getTime();
+    var countDownDate5 = new Date("Jun 11, 2021 12:25:25").getTime();
+    var countDownDate6 = new Date("Jun 11, 2021 12:25:25").getTime();   
+    var countDownDate7 = new Date("Jun 11, 2021 12:25:25").getTime();
+    var countDownDate8 = new Date("Dec 11, 2021 12:25:25").getTime();
+    var countDownDate9 = new Date("Dec 11, 2021 12:25:25").getTime();
+    var countDownDate10 = new Date("Dec 11, 2021 12:25:25").getTime();
+
+    var timer1= document.getElementById("timer")
+    var timer2= document.getElementById("timer2")
+    var timer3= document.getElementById("timer3")
+    var timer4= document.getElementById("timer4")
+    var timer5= document.getElementById("timer5")
+    var timer6= document.getElementById("timer6")
+    var timer7= document.getElementById("timer7")
+    var timer8= document.getElementById("timer8")
+    var timer9= document.getElementById("timer9")
+    var timer10= document.getElementById("timer10")
+        
+        
+    function countdown(finish_date, timer){
+        
+        var x = setInterval(function() {
+        
+            var now = new Date().getTime();
+        
+            var distance = finish_date - now;
+    
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+            timer.innerHTML = days + "<span style='font-weight:normal'>d</span> " + hours + "h " + minutes + "m " + seconds + "s ";
+        
+        
+            if (distance < 0) {
+                clearInterval(x);
+                timer.innerHTML = "ICO Has Ended";
+                }
+        }, 1000);
+    }
+        
+    countdown(countDownDate1, timer1)
+    countdown(countDownDate2, timer2)
+    countdown(countDownDate3, timer3)
+    countdown(countDownDate4, timer4)
+    countdown(countDownDate5, timer5)
+    countdown(countDownDate6, timer6)
+    countdown(countDownDate7, timer7)
+    countdown(countDownDate8, timer8)
+    countdown(countDownDate9, timer9)
+    countdown(countDownDate10, timer10)
+        
+        
+</script>
+<div class="footer_color">
+    {% include 'footer.html' %}
+</div>
+{% endblock %}
+

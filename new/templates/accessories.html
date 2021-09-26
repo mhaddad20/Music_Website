@@ -1,0 +1,140 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/music.css' %}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" crossorigin="anonymous">
+	<meta name="description" content="{% block metadescription %}{% endblock %}">
+	<title>{% block title %}{% endblock %}</title>
+	
+</head>
+<body>
+	<div class = "container">
+		<div class="container-fluid navbar-fixed-top my-top-navbar-div">
+			{% include 'top-navbar.html' %}
+		</div>
+	</div>
+	{% include 'navbar.html' %}
+{% block content %}
+
+<div class="bg_contact">
+    <img src="{% static 'images/images.png' %}" alt="window">
+	<div class="text_accessory">
+        <h4>Accesories</h4>
+        <h1>All the music Accesories you need</h1>
+    </div>
+  </div>
+  <div class="space"></div>
+
+  <div class="container">
+	<div class="row">
+		<div class="col-lg-4 mb-5 px-4">
+			<div class="card">
+				<div class="container_voucher">
+					<img src="{% static 'images/Amplifier.jpeg' %}" alt="Avatar" width="50%" height="50%" class="image_promo">
+					<div class="overlay">
+					  <div class="promo_code">Guitar Amplifier</div>
+					</div>
+				  </div>
+				<div class="card-body">
+					<h5 class="btn btn-outline-danger btn-sm"><a class="accessory_css" href="http://127.0.0.1:8000/a179d8e9-70e8-40a7-802a-d1c0a2d18aa3/4d4c3757-1d9b-4c09-9fc1-bf48aa65c4ba/">Amplifier €172.00</h5></a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-lg-4 mb-5 px-5">
+			<div class="card">
+				<div class="container_voucher">
+					<img src="{% static 'images/Microphone.jpeg' %}" alt="" class="image_promo">
+					<div class="overlay">
+					  <div class="promo_code">Microphone </div>
+					</div>
+				  </div>
+				<div class="card-body">
+					<h5 class="btn btn-outline-danger btn-sm"><a class="accessory_css" href="http://127.0.0.1:8000/d6b0403a-2ccc-4d50-8b15-492579ea0c3d/cdca5618-6495-42b4-a2c1-0f7ebaf16fcf/">Microphone €12.00</h5></a>
+				</div>
+			</div>
+
+	</div>
+	<div class="col-lg-4 mb-5 px-5">
+		<div class="card">
+			<div class="container_voucher">
+				<img src="{% static 'images/keyboard_cable.jpeg' %}" alt="Avatar" class="image_promo">
+				<div class="overlay">
+				  <div class="promo_code">Keyboard cable </div>
+				</div>
+			  </div>
+			<div class="card-body">
+				<h5 class="btn btn-outline-danger btn-sm"><a class="accessory_css" href="http://127.0.0.1:8000/590dc6f0-179c-400e-829d-db2db9257615/4f50ab13-bebf-485f-bec4-8ab3bee41566/">Keyboard Cables €198.00</h5></a>
+				
+				
+			</div>
+		</div>
+		
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 mb-2 px-5">
+				<div class="card">
+					<div class="container_voucher">
+						<img src="{% static 'images/violin_bow.jpeg' %}" alt="Avatar" class="image_promo">
+						<div class="overlay">
+						  <div class="promo_code">Violin bow</div>
+						</div>
+					  </div>
+					<div class="card-body">
+						<h5 class="btn btn-outline-danger btn-sm"><a class="accessory_css" href="http://127.0.0.1:8000/18ea6142-9254-407c-82ce-2ca7c890cae5/fc794045-aa92-408f-aab5-ed9e39dc8590/">Violin bow €52.00</h5></a>
+						
+	
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-4 mb-2 px-5">
+				<div class="card">
+					<div class="container_voucher">
+						<img src="{% static 'images/guitar_pick.jpeg' %}" alt="" class="image_promo">
+						<div class="overlay">
+						  <div class="promo_code">Guitar pick </div>
+						</div>
+					  </div>
+					<div class="card-body">
+						<h5 class="btn btn-outline-danger btn-sm"><a class="accessory_css" href="http://127.0.0.1:8000/d6b0403a-2ccc-4d50-8b15-492579ea0c3d/3a5d6a10-9a93-4653-969a-e99e48d56e42/">Guitar €5.00</h5></a>
+						
+	
+				
+					</div>
+				</div>
+	
+		</div>
+		<div class="col-lg-4 mb-2 px-2">
+			<div class="card">
+				<div class="container_voucher">
+					<img src="{% static 'images/drumsticks.jpeg' %}" alt="Avatar" class="image_promo">
+					<div class="overlay">
+					  <div class="promo_code">Drumsticks</div>
+					</div>
+				  </div>
+				<div class="card-body">
+					<h5 class="btn btn-outline-danger btn-sm"><a class="accessory_css" href="http://127.0.0.1:8000/438cc5cf-940a-401d-a326-84df49c12bf2/62477950-8598-49d3-a8ab-7d8be3b47678/">Drumsticks €34.00</h5></a>
+					
+	
+				</div>
+			</div>
+			
+		</div>
+	</div>
+ 
+
+  <div class="footer_color">
+    {% include 'footer.html' %}
+  </div>
+      
+
+
+  {% endblock %}

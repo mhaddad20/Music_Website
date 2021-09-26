@@ -1,0 +1,35 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/music.css' %}">
+      <ul class="nav1">
+      
+        <li class="linknav"><a href="{% url 'shop:allProdCat' %}">Home</a>
+        </li>
+        <li class="linknav"><a href="{% url 'about' %}">About Us</a></li>
+        <li class="linknav"><a href="{% url 'contact' %}">Contact</a></li>
+        {% for cat in links %}
+        {% if 'Merchandise' not in cat.name%}
+          <li class="linknav"><a href="{{cat.get_absolute_url}}">{{cat.name}}</a></li>
+        {% endif %}
+        {% endfor %}
+        <div class="search_bar">
+        <form class="form-inline my-2 mx-8 my-lg-6" action="{% url 'search_app:searchResult' %}" method="get">
+          {% csrf_token %}
+          <input class="form-control mr-sm-2 mx-5" id="search" type="search" placeholder="Search Item..." aria-label="Search" name="q">
+          <button class="btn btn-warning my-3 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+        
+      <div class="dropdown-menu dropdown-menu-right">
+        <a href="{% url 'order:order_history' %}" class="dropdown-item">Order History</a>
+      </div>
+    </ul>
+    <ul class="nav2">
+      <li class="linknav2"><a href="{% url 'new_product' %}">New Products <i class="fas fa-guitar fa-sm"></i></a></li>
+      <li class="linknav2"><a href="{% url 'accessories' %}">Accessories<i class="fas fa-headphones fa-fw"></i></a></li>
+      <li class="linknav2"><a href="{% url 'merchandise' %}">Merchandise<i class="fas fa-tshirt fa-fw"></i></a></li>
+      <li class="linknav2"><a href="{% url 'vouchers' %}">Vouchers<i class="fas fa-gift fa-fw"></i></a></li>
+      <li class="linknav2"><a href="{% url 'repairs' %}">Repairs<i class="fas fa-tools fa-fw"></i></a></li>
+    </ul>
+
+    
+  

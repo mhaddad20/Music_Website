@@ -1,0 +1,237 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/music.css' %}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" crossorigin="anonymous">
+	<meta name="description" content="{% block metadescription %}{% endblock %}">
+	<title>{% block title %}{% endblock %}</title>
+	
+</head>
+
+<body>
+	<div class = "container">
+		<div class="container-fluid navbar-fixed-top my-top-navbar-div">
+			{% include 'top-navbar.html' %}
+		</div>
+	</div>
+	{% include 'navbar.html' %}
+{% block content %}
+
+
+
+<div class="bg_contact">
+    <img src="{% static 'images/vouchers.jpg' %}" alt="window">
+	<div class="text_voucher">
+        <h4>Special Discounts</h4>
+        <h1>Up to 30% Off!</h1>
+    </div>
+  </div>
+  <div class="space"></div>
+ 
+
+
+  <div class="container">
+	<div class="row">
+		<div class="col-lg-4 mb-5 px-4">
+			<div class="card">
+				<div class="container_voucher">
+					<img src="{% static 'images/img9.jpg' %}" alt="Avatar" width="50%" height="50%" class="image_promo">
+					<div class="overlay">
+					  <div class="promo_code">MELOMANIA</div>
+					</div>
+				  </div>
+				<div class="card-body">
+					<h5 class="btn btn-outline-danger btn-sm">20% OFF YOUR NEXT PURCHASE!</h5>
+					<p class="btn btn-outline-danger btn-sm">
+						Promo code: MELOMANIA 
+					</p>
+
+					<a  class="btn btn-outline-danger btn-sm" id="promo1">
+						<p>Expires In:</p>
+						<p id="timer"></p>
+					</a>
+			
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-lg-4 mb-5 px-5">
+			<div class="card">
+				<div class="container_voucher">
+					<img src="{% static 'images/img10.jpg' %}" alt="" class="image_promo">
+					<div class="overlay">
+					  <div class="promo_code">MELODIC </div>
+					</div>
+				  </div>
+				<div class="card-body">
+					<h5 class="btn btn-outline-danger btn-sm">10% OFF YOUR NEXT PURCHASE!</h5>
+					<p class="btn btn-outline-danger btn-sm">
+						Promo code: MELODIC  
+					</p>
+
+					<a  class="btn btn-outline-danger btn-sm" id="promo1">
+						<p>Expires In:</p>
+						<p id="timer2"></p>
+					</a>
+			
+				</div>
+			</div>
+
+	</div>
+	<div class="col-lg-4 mb-5 px-5">
+		<div class="card">
+			<div class="container_voucher">
+				<img src="{% static 'images/img11.jpg' %}" alt="Avatar" class="image_promo">
+				<div class="overlay">
+				  <div class="promo_code">BLACKEYEDPEAS </div>
+				</div>
+			  </div>
+			<div class="card-body">
+				<h5 class="btn btn-outline-danger btn-sm">15% OFF YOUR NEXT PURCHASE!</h5>
+				<p class="btn btn-outline-danger btn-sm">
+					Promo code: BLACKEYEDPEAS  
+				</p>
+
+				<a  class="btn btn-outline-danger btn-sm" id="promo1">
+					<p>Expires In:</p>
+					<p id="timer3"></p>
+				</a>
+		
+			</div>
+		</div>
+		
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 mb-2 px-5">
+				<div class="card">
+					<div class="container_voucher">
+						<img src="{% static 'images/img12.jpg' %}" alt="Avatar" class="image_promo">
+						<div class="overlay">
+						  <div class="promo_code">DESPACITO </div>
+						</div>
+					  </div>
+					<div class="card-body">
+						<h5 class="btn btn-outline-danger btn-sm">25% OFF YOUR NEXT PURCHASE!</h5>
+						<p class="btn btn-outline-danger btn-sm">
+							Promo code: DESPACITO  
+						</p>
+	
+						<a  class="btn btn-outline-danger btn-sm" id="promo1">
+							<p>Expires In:</p>
+							<p id="timer4"></p>
+						</a>
+				
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-4 mb-2 px-5">
+				<div class="card">
+					<div class="container_voucher">
+						<img src="{% static 'images/img13.jpg' %}" alt="" class="image_promo">
+						<div class="overlay">
+						  <div class="promo_code">EASTER  </div>
+						</div>
+					  </div>
+					<div class="card-body">
+						<h5 class="btn btn-outline-danger btn-sm">12% OFF YOUR NEXT PURCHASE!</h5>
+						<p class="btn btn-outline-danger btn-sm">
+							Promo code: EASTER   
+						</p>
+	
+						<a  class="btn btn-outline-danger btn-sm" id="promo1">
+							<p>Expires In:</p>
+							<p id="timer5"></p>
+						</a>
+				
+					</div>
+				</div>
+	
+		</div>
+		<div class="col-lg-4 mb-2 px-2">
+			<div class="card">
+				<div class="container_voucher">
+					<img src="{% static 'images/img16.jpg' %}" alt="Avatar" class="image_promo">
+					<div class="overlay">
+					  <div class="promo_code">SUMMERISHERE </div>
+					</div>
+				  </div>
+				<div class="card-body">
+					<h5 class="btn btn-outline-danger btn-sm">30% OFF YOUR NEXT PURCHASE!</h5>
+					<p class="btn btn-outline-danger btn-sm">
+						Promo code: SUMMERISHERE  
+					</p>
+	
+					<a  class="btn btn-outline-danger btn-sm" id="promo1">
+						<p>Expires In:</p>
+						<p id="timer6"></p>
+					</a>
+			
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<script>
+		var countDownDate1 = new Date("Apr 13, 2022 12:25:25").getTime();
+		var countDownDate2 = new Date("Jul 13, 2021 12:25:25").getTime();
+		var countDownDate3 = new Date("Jun 13, 2021 12:25:25").getTime();
+		var countDownDate4 = new Date("Oct 13, 2021 12:25:25").getTime();
+		var countDownDate5 = new Date("May 13, 2021 12:25:25").getTime();
+		var countDownDate6 = new Date("Jul 14, 2021 12:25:25").getTime();
+		
+		
+		var timer1= document.getElementById("timer")
+		var timer2= document.getElementById("timer2")
+		var timer3= document.getElementById("timer3")
+		var timer4= document.getElementById("timer4")
+		var timer5= document.getElementById("timer5")
+		var timer6= document.getElementById("timer6")
+		
+		
+		function countdown(finish_date, timer){
+		
+			var x = setInterval(function() {
+		
+							var now = new Date().getTime();
+		
+							var distance = finish_date - now;
+		
+							var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+							var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+							var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+							var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+							timer.innerHTML = days + "<span style='font-weight:normal'>d</span> " + hours + "h " + minutes + "m " + seconds + "s ";
+		
+		
+							if (distance < 0) {
+							clearInterval(x);
+							timer.innerHTML = "ICO Has Ended";
+							}
+							}, 1000);
+		}
+		
+		countdown(countDownDate1, timer1)
+		countdown(countDownDate2, timer2)
+		countdown(countDownDate3, timer3)
+		countdown(countDownDate4, timer4)
+		countdown(countDownDate5, timer5)
+		countdown(countDownDate6, timer6)
+		
+		</script>
+
+
+  <div class="footer_color">
+    {% include 'footer.html' %}
+  </div>
+      
+
+
+  {% endblock %}

@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/music.css' %}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" crossorigin="anonymous">
+	<meta name="description" content="{% block metadescription %}{% endblock %}">
+	<title>{% block title %}{% endblock %}</title>
+	
+</head>
+<body>
+	<div class = "container">
+		<div class="container-fluid navbar-fixed-top my-top-navbar-div">
+			{% include 'top-navbar.html' %}
+		</div>
+	</div>
+	{% include 'navbar.html' %}
+{% block content %}
+
+<div class="bg_contact">
+    <img src="{% static 'images/contact.jpg' %}" alt="window">
+	<div class="text">
+        <h1>Get in Touch</h1>
+        <h4>We provide exceptional customer service</h4>
+    </div>
+  </div>
+  <div class="space"></div>
+
+  <div class="container">
+	<div class="row">
+		<div class="col-lg-3 mb-2">
+			<div class="card">
+				<img class="card-img-top" src="{% static 'images/profile1.jpg' %}" alt="">
+				<div class="card-body">
+					<h5 class="card-title">John Arnold</h5>
+					<p class="card-text">
+						Sales Expert
+					</p>
+
+					<a  class="btn btn-outline-primary btn-sm" id="phone2">
+						+353 193 6713 637
+					</a>
+					<a  class="btn btn-outline-primary btn-sm">
+						<i class="fa fa-phone" id="phone2"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 mb-4">
+			<div class="card">
+				<img class="card-img-top" src="{% static 'images/profile2.jpg' %}" alt="">
+
+				<div class="card-body">
+					<h5 class="card-title">Anita Madison</h5>
+					<p class="card-text">
+						Office Administrator
+					</p>
+					  
+					<a  class="btn btn-outline-primary btn-sm" id="phone2">
+						+353 389 5725 247
+					</a>
+					<a  class="btn btn-outline-primary btn-sm">
+						<i class="fa fa-phone" id="phone2"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 mb-4">
+			<div class="card">
+				<img class="card-img-top" src="{% static 'images/profile3.jpg' %}" alt="">
+
+				<div class="card-body">
+					<h5 class="card-title">Kylie Dempsey</h5>
+					<p class="card-text">
+						Social Media Manager
+					</p>
+					  
+					<a  class="btn btn-outline-primary btn-sm" id="phone2">
+						+353 480 1403 5528
+					</a>
+					<a  class="btn btn-outline-primary btn-sm">
+						<i class="fa fa-phone" id="phone2"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 mb-4">
+			<div class="card">
+				<img class="card-img-top" src="{% static 'images/profile4.jpg' %}" alt="">
+
+				<div class="card-body">
+					<h5 class="card-title">Fred Miller</h5>
+					<p class="card-text">
+						Communications Assistant
+					</p>
+					  
+					<a  class="btn btn-outline-primary btn-sm" id="phone2">
+						+353 782 1256 8285
+					</a>
+					<a  class="btn btn-outline-primary btn-sm">
+						<i class="fa fa-phone" id="phone2"></i></a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container2">
+	<h3 class="review">Customer Service Reviews</h3>
+</div>
+
+<div class="container-fluid mx-auto">
+    <div class="row justify-content-center">
+        <div class="col-xl-7 col-lg-8 col-md-10 col-12 text-center mb-0">
+            <div class="card1">
+                <div class="row justify-content-left d-flex">
+                    <div class="col-md-4 d-flex flex-column">
+                        <div class="rating-box">
+                            <h1 class="pt-4">4.0</h1>
+                            <p class="">out of 5</p>
+                        </div>
+                        <div> <span class="fa fa-star star-active mx-1"></span> <span class="fa fa-star star-active mx-1"></span> <span class="fa fa-star star-active mx-1"></span> <span class="fa fa-star star-active mx-1"></span> <span class="fa fa-star star-inactive mx-1"></span> </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="rating-bar0 justify-content-center">
+                            <table class="text-left mx-auto">
+                                <tr>
+                                    <td class="rating-label">Excellent</td>
+                                    <td class="rating-bar">
+                                        <div class="bar-container">
+                                            <div class="bar-5"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">123</td>
+                                </tr>
+                                <tr>
+                                    <td class="rating-label">Good</td>
+                                    <td class="rating-bar">
+                                        <div class="bar-container">
+                                            <div class="bar-4"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">23</td>
+                                </tr>
+                                <tr>
+                                    <td class="rating-label">Average</td>
+                                    <td class="rating-bar">
+                                        <div class="bar-container">
+                                            <div class="bar-3"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">10</td>
+                                </tr>
+                                <tr>
+                                    <td class="rating-label">Poor</td>
+                                    <td class="rating-bar">
+                                        <div class="bar-container">
+                                            <div class="bar-2"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">3</td>
+                                </tr>
+                                <tr>
+                                    <td class="rating-label">Terrible</td>
+                                    <td class="rating-bar">
+                                        <div class="bar-container">
+                                            <div class="bar-1"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">0</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+			
+	</div>
+				
+</div>
+			
+</div>
+
+  <div class="div5"><a class="comments" href="{% url 'article_list' %}">View Comments Section</a></div>
+  <div class="footer_color">
+    {% include 'footer.html' %}
+  </div>
+  {% endblock %}

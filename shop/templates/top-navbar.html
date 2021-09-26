@@ -1,0 +1,56 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/music.css' %}">
+<div class="containerss">
+	<div class="menu">
+		<ul>
+			{% if user.is_authenticated %}
+			<a href="{% url 'shop:allProdCat' %}"><img src="{% static 'images/Starmix_logo.png' %}" width="100" alt="Online Music Store"></a>
+			<li>
+				<div class="dropdown">
+                Welcome, <a href="#"
+                aria-haspopup="true" aria-expanded="false">{{ user.username }} 
+                <i class="fas fa-user-circle"></i></a>
+				<div class="dropdown-content">
+					<a href="{% url 'order:order_history' %}">Order History</a>
+				  </div></div>
+				
+			</li>
+			<li><a href="mailto:export@StarMix.com">StarMixHelp@gmail.com<i class="fa fa-envelope"></i></a></li>
+			<li><a href="">+353 083 5139 424<i class="fa fa-phone"></i></a></li>
+			<li class="sign_out">
+				<a href="{% url 'signout' %}" id="sign_out">Sign Out<i class="fas fa-sign-out-alt"></i></a>
+			</li>
+			{% if item_count > 0 %}
+        <li class="item">
+			
+          <a class="item2" href="{% url 'cart:cart_detail' %}"><i class="fas fa-shopping-cart"></i>({{item_count}})</a>
+		  
+        </li>
+
+        {% endif%}
+			
+			{% else %}
+			<a href="{% url 'shop:allProdCat' %}"><img src="{% static 'images/Starmix_logo.png' %}" width="100" alt="Online Music Store"></a>
+			<li><a href="mailto:export@StarMix.com">StarMixHelp@gmail.com<i class="fa fa-envelope"></i></a></li>
+			<li><a href="">+353 083 5139 424<i class="fa fa-phone"></i></a></li>
+			<li class="sign_up">
+				<a href="{% url 'signup' %}" id="signup">Sign Up <i class="fas fa-user-plus"></i></a>
+			</li>
+			<li class="sign_in">
+				<a href="{% url 'signin' %}" id="signin">Sign In <i class="fas fa-sign-in-alt"></i></a>
+				
+			</li>
+			{% if item_count > 0 %}
+        <li class="item">
+          <a class="item2" href="{% url 'cart:cart_detail' %}"><i class="fas fa-shopping-cart"></i>({{item_count}})</a>
+        </li>
+        {% endif%}
+		
+			
+			
+            
+			{% endif %}
+		</ul>
+		
+	</div>
+</div>

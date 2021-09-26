@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/music.css' %}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" crossorigin="anonymous">
+	<meta name="description" content="{% block metadescription %}{% endblock %}">
+	<title>{% block title %}{% endblock %}</title>
+	
+</head>
+<body>
+	<div class = "container">
+		<div class="container-fluid navbar-fixed-top my-top-navbar-div">
+			{% include 'top-navbar.html' %}
+		</div>
+	</div>
+	{% include 'navbar.html' %}
+{% block content %}
+
+<div class="bg1">
+    <img class="s" src="{% static 'images/new1.jpg' %}" alt="window" width="100%" height="100%"></a>
+    <div class="middle">
+        <h1>STARMIX</h1>
+        <h4>LIVE THROUGH MUSIC</h4>
+    </div>
+  </div>
+  <div class="container_about">
+	  <h4 class="about_title">ABOUT STARMIX</h4>
+	  <p>Star Mix is an online marketplace dedicated to selling new, used, and vintage instruments
+		  to music enthusiasts around the world. What was once a simple idea that as now grown into one
+		  of the best music marketplaces around that inspire you to pick up a saxophone and start jamming!
+		  Looking to begin your journey through music? Our music-savvy customer-service team will know just what
+		  you're looking for!
+	  </p>
+</div>
+<div class="mission">
+	<img class="s" src="{% static 'images/headphone.jpg' %}" alt="window" width="50%" height="50%">
+	<h4>Our Mission is to <p>Create a positive and exciting experience through music</p></h4>
+	
+</div> 
+<div class="join">
+	<h4>Get Started!</h4>
+	<h4>Join Our Community</h4>
+	<div class="button1">
+	<button class="button"><a href="{% url 'signup' %}">Sign Up </a></button>
+</div>
+</div>
+  <div class="footer_color">
+    {% include 'footer.html' %}
+  </div>
+  {% endblock %}
+  
+
+</body>
+</html>

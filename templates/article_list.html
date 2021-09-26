@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}Articles{% endblock title %}
+{% block content %}
+<div class="div6">
+<h3>The Comments</h3>
+</div>
+  {% for article in object_list %}
+    <div class="card3">
+      <div class="card-header " id="bg_comment_footer">
+        <span class="font-weight-bold text-white">{{ article.title }}</span> &middot;
+        <span class="text-white">by {{ article.author }} | {{ article.date }}</span>
+      </div>
+      <div class="card-body">
+        <!-- Changes start here! -->
+        <p>{{ article.body }}</p>
+        <a href="{% url 'article_edit' article.pk %}">Edit</a> |
+        <a href="{% url 'article_delete' article.pk %}">Delete</a> |
+        <a href="{% url 'article_new' %}">New</a>
+      </div>
+      
+      <div class="card-footer" id="bg_comment_footer">
+        {% for comment in article.comments.all %}
+          <p>
+            <span class="font-weight-bold text-white">{{ comment.author }} &middot;</span>
+            <span class="font-weight-bold text-white">{{ comment }}</span>
+          </p>
+          
+        {% endfor %}
+      </div>
+      <br>
+      <!-- Changes end here! -->
+    </div>
+    <br>
+    <br />
+  
+  {% endfor %}
+
+
+  
+{% endblock content %}
