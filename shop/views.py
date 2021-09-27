@@ -14,14 +14,10 @@ def allProdCat(request, category_id=None):
     
     """Pagination code"""
     paginator = Paginator(products_list, 6)
-    try:
-        page = int(request.GET.get('page','1'))
-    except:
-        page = 1
-    try:
-        products = paginator.page(1)
-    except (EmptyPage,InvalidPage):
-        products = paginator.page(paginator.num_pages)
+    page = int(request.GET.get('page','1'))
+    products = paginator.page(page)
+    #products = paginator.page(paginator.num_pages)
+
     return render(request, 'shop/category.html', {'category':c_page, 'products':products})
 
 
